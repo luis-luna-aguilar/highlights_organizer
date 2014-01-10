@@ -1,0 +1,15 @@
+- if @current_topic.information_lines.present?
+
+  %h2 Temporary Mode Switch
+  %button#temporary-mode-switch.draggable Draggable
+  %br
+  %br
+  
+  %h2 Information List
+  %ul#information_lines
+    - @current_topic.information_lines.rank(:line_order).each do |line|
+      %li{class: "information-line", "data-information-line-id" => line.id, "data-url" => "/information_lines/#{line.id}"}
+        = line.text
+- else
+  %span{id:"no-lines-mssg"} No information stored.
+  %br

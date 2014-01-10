@@ -1,0 +1,46 @@
+// import the CSS framework
+@import bootstrap
+
+// make all images responsive by default
+img
+  @extend .img-responsive
+  margin: 0 auto
+
+// override for the 'Home' navigation link
+.navbar-brand
+  font-size: inherit
+
+// apply styles to HTML elements
+// to make views framework-neutral
+main
+  @extend .container
+  padding-top: 2em
+  padding-bottom: 2em
+  width: 100%
+  // margin-top: 51px; // accommodate the navbar
+
+section
+  @extend .row
+  margin-top: 1.4em
+
+input[type="submit"]
+  background-color: #357180
+  padding: 0em 0.5em
+  color: white
+  float: right
+  margin-top: 0.5em
+
+input[type="submit"]:hover
+  color: white
+
+h2
+  text-transform: uppercase
+  font-weight: bold
+  color: #444
+  margin: 0
+  font-size: 1em
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+  margin-bottom: 0.5em
+
+.alert
+  border-radius: 0px

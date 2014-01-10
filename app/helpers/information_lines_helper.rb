@@ -1,0 +1,2 @@
+module InformationLinesHelper
+end

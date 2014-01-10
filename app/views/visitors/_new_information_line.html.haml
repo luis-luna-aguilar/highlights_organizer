@@ -1,0 +1,6 @@
+%h2 New line
+
+= simple_form_for @new_information do |f|
+  = f.input :topic_id, as: :hidden, input_html: {value: @current_topic.id}
+  = f.input :text, label: false, hint: "Ctrl + Enter saves submits the form", autofocus: true
+  = f.button :submit, "create"

@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 ruby '2.0.0'
+
 gem 'rails', '4.0.0'
 gem 'sqlite3'
 gem 'sass-rails', '~> 4.0.0'
@@ -13,6 +14,9 @@ gem 'figaro'
 gem 'haml-rails'
 gem 'high_voltage'
 gem 'simple_form'
+gem 'ancestry'
+gem 'ranked-model'
+
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_19, :mri_20, :rbx]
@@ -25,7 +29,9 @@ group :development do
   gem 'rb-fchange', :require=>false
   gem 'rb-fsevent', :require=>false
   gem 'rb-inotify', :require=>false
+  gem 'pry-rails'
 end
+
 group :production do
   gem 'unicorn'
 end

@@ -1,0 +1,17 @@
+#sidebar.col-md-2
+
+  #sidebar-header.row
+    %a{href: root_path}
+      #logo-with-text
+        = image_tag "app-logo.svg", id: "app-logo"
+        %h1 Highlights
+
+  %br
+
+  .row
+    = render "topics"
+
+  %br
+
+  .row
+    = render "new_topic"

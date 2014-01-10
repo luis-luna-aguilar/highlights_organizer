@@ -1,0 +1,6 @@
+%h2 New Topic
+
+= simple_form_for @new_topic do |f|
+  = f.input :parent_id, as: :select, collection: Topic.all, label_method: :title, value_method: :id
+  = f.input :title
+  = f.button :submit, "create"

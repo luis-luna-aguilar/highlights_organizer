@@ -1,1 +1,10 @@
-%h3 Home
+.row  
+  = render "sidebar"
+  
+  .col-md-10
+    - if @current_topic
+      = render "information_list"
+      %br
+      = render "new_information_line"
+    - else
+      %span{id:"no-topics-mssg"} Add some topics first.

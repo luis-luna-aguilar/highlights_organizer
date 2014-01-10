@@ -1,0 +1,73 @@
+#sidebar
+  border-right: 1px solid #222
+  padding-bottom: 1em
+
+  h2
+    margin-left: 1em
+
+  #sidebar-header
+
+    a
+      text-decoration: none
+    
+    #logo-with-text
+      margin: 1em 0
+      text-align: center
+      img
+        margin: 0
+        display: inline-block
+      h1
+        font-size: 1.7em
+        font-family: "Lobster"
+        color: #222
+        display: inline-block
+        margin: 0px
+        margin-left: 0.5em
+        position: relative
+        top: 0.4em
+
+  #topics-list
+    list-style: none
+    padding: 0 1em 0 1.5em
+
+    li.hovered-droppable
+      background-color: #EEE
+
+    li
+      width: 100%
+
+      ul
+        list-style: none
+        padding-left: 0.8em
+        
+    a.selected
+      text-decoration: underline
+
+  form
+    padding: 0 1em
+    label, .controls
+      display: inline-block
+    .controls
+      margin-left: 0.7em
+      width: 71%
+      input
+        width: 100%
+      select
+        width: 100%
+    label
+      width: 23%
+
+  // Pop Over for Inline Editing Topics patch
+
+  .popover-content
+    padding: 0.3em
+
+  .form-inline.editableform
+    padding-left: 0
+
+  .popover.editable-container.editable-popup.fade.top.in
+    left: 1em !important
+    background-color: #444
+
+    .arrow:after
+      border-top-color: #444

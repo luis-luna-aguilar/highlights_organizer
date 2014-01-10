@@ -1,0 +1,5 @@
+%h2 Your topics
+
+%ul#topics-list
+  - (@topics.select {|t| t.is_childless?}).each do |topic|
+    = raw generate_list_for(topic, @current_topic)
